@@ -66,3 +66,30 @@ h3 {
   background-color: $custom-light-silver !important;
   color: #555;
 }
+
+body,
+.page__content,
+.archive,
+.sidebar {
+  color: #cfcfcf;
+}
+
+h1,
+h2,
+h3,
+.page__title,
+.archive__item-title {
+  color: #ffffff;
+}
+
+.greedy-nav a {
+  color: #ffffff !important;
+}
+
+a {
+  color: #d8d8d8;
+}
+
+a:hover {
+  color: #ffffff;
+}
