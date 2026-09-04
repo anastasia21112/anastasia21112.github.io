@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/plum";
+@import "minimal-mistakes";
+
+/* Custom purple + silver palette */
+
+$custom-purple: #8f79b8;
+$custom-purple-dark: #6f5a99;
+$custom-purple-light: #b8a6d9;
+$custom-silver: #c0c0c0;
+$custom-light-silver: #e6e6e6;
+
+/* Header / masthead */
+.masthead {
+  background-color: $custom-purple !important;
+}
+
+.greedy-nav {
+  background-color: $custom-purple !important;
+}
+
+.greedy-nav a {
+  color: white !important;
+}
+
+.greedy-nav a:hover {
+  color: $custom-light-silver !important;
+}
+
+/* Links */
+a {
+  color: $custom-purple-dark;
+}
+
+a:hover {
+  color: $custom-purple;
+}
+
+/* Headings */
+.page__title,
+.archive__item-title,
+h1,
+h2,
+h3 {
+  color: $custom-purple-dark;
+}
+
+/* Sidebar */
+.sidebar {
+  border-right: 1px solid $custom-silver;
+}
+
+/* Buttons */
+.btn {
+  background-color: $custom-purple !important;
+  color: white !important;
+}
+
+.btn:hover {
+  background-color: $custom-purple-dark !important;
+}
+
+/* Footer */
+.page__footer {
+  background-color: $custom-light-silver !important;
+  color: #555;
+}
