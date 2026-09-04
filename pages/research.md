@@ -5,8 +5,6 @@ layout: single
 author_profile: true
 ---
 
-## Research
-
 My research interests include machine learning for biology, computational biology, and AI for scientific discovery.
 
 ### Machine Learning for Biology
