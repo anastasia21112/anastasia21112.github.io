@@ -1,0 +1,36 @@
+remote_theme: "mmistakes/minimal-mistakes"
+
+minimal_mistakes_skin: "plum"
+
+title: "Anastasia Dunca"
+name: "Anastasia Dunca"
+description: "Personal website"
+
+url: "https://anastasia21112.github.io"
+baseurl: ""
+
+plugins:
+  - jekyll-include-cache
+  - jekyll-remote-theme
+
+include:
+  - _pages
+
+author:
+  name: "Anastasia Dunca"
+  avatar: "/assets/images/website_headshot.jpeg"
+  bio: "PhD student interested in machine learning and computational biology."
+  location: "Seattle, WA"
+
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/anastasia21112"
+
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "YOUR-GOOGLE-SCHOLAR-URL"
+
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "YOUR-LINKEDIN-URL"
