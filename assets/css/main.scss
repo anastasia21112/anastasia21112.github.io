@@ -87,3 +87,14 @@ a:hover {
   background-color: $custom-light-silver !important;
   color: #555555;
 }
+
+html,
+body,
+.initial-content,
+.page,
+.page__inner-wrap,
+.archive,
+.layout--single,
+.layout--home {
+  background-color: #CDB7E9 !important;
+}
