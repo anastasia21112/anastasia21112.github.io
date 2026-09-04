@@ -1,3 +1,6 @@
+---
+---
+
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/plum";
@@ -95,6 +98,7 @@ body,
 .page__inner-wrap,
 .archive,
 .layout--single,
-.layout--home {
-  background-color: #CDB7E9 !important;
+.layout--home,
+#main {
+  background: #CDB7E9 !important;
 }
