@@ -5,11 +5,11 @@ layout: single
 author_profile: true
 ---
 
-Hi! I'm Anastasia.
+<p class="page-lead">Hi! I'm Anastasia.</p>
 
-I'm interested in machine learning, computational biology, and AI for scientific discovery.
+<p class="page-intro">I'm interested in machine learning, computational biology, and AI for scientific discovery.</p>
 
-## News and Updates
+<h2 class="section-heading">News and Updates</h2>
 
 <ul class="news-list">
   <li class="news-item">
