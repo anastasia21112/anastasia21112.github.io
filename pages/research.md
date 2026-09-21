@@ -8,6 +8,18 @@ author_profile: false
 
 <div class="publications">
 
+<h1 class="section-heading">Research Interests</h1>
+
+<div class="research-interests">
+  <p>My research sits at the intersection of machine learning and the sciences, with a focus on building models that are both reliable and useful for scientific discovery. Broadly, I am interested in:</p>
+  <ul>
+    <li><strong>AI safety and robustness</strong> &mdash; adversarial training and evaluation of large language models, including robustness that holds up across languages rather than only in English.</li>
+    <li><strong>Machine learning for computational biology</strong> &mdash; learning structure from high-dimensional biological data such as single-cell RNA sequencing, and using it to characterize molecular phenotypes.</li>
+    <li><strong>Applied and computational mathematics</strong> &mdash; modeling and simulation of physical systems, including multiscale dynamics in materials science.</li>
+    <li><strong>Ethics and social responsibility in computing</strong> &mdash; the environmental and justice implications of the computing systems we build and deploy.</li>
+  </ul>
+</div>
+
 <h1 class="publications-heading">Publications</h1>
 
 <h2 class="publication-year">2025</h2>
