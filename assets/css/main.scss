@@ -219,3 +219,38 @@ blockquote {
     margin-bottom: 1rem;
   }
 }
+
+/* Make wide pages use nearly the full browser width */
+.layout--single.wide #main,
+.wide #main {
+  max-width: 95% !important;
+  width: 95% !important;
+}
+
+/* Let the research page itself fill that space */
+.wide .page {
+  width: 100% !important;
+  float: none !important;
+  padding-right: 0 !important;
+}
+
+.wide .page__inner-wrap {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* Let publication cards span full width */
+.wide .publication {
+  width: 100%;
+}
+
+/* Smaller image, large text area */
+.wide .publication-thumb {
+  width: 160px;
+  flex: 0 0 160px;
+}
+
+.wide .publication-info {
+  flex: 1;
+  max-width: none;
+}
