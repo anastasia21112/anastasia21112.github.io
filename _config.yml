@@ -19,7 +19,7 @@ include:
 author:
   name: "Anastasia Dunca"
   avatar: "/assets/images/website_headshot.jpeg"
-  bio: "PhD student interested in machine learning and computational biology."
+  bio: "PhD student studying artificial intelligence and computational biology."
   location: "Seattle, WA"
 
   links:
