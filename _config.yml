@@ -23,6 +23,10 @@ author:
   location: "Seattle, WA"
 
   links:
+    - label: "E-mail"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:adunca08@cs.washington.edu"
+
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/anastasia21112"

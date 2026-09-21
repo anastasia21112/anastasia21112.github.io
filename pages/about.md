@@ -14,6 +14,6 @@ I'm interested in machine learning, computational biology, and AI for scientific
 <ul class="news-list">
   <li class="news-item">
     <span class="news-date">May 2026</span>
-    <span class="news-text">Graduated from MIT.</span>
+    <span class="news-text">Graduated from MIT!</span>
   </li>
 </ul>

@@ -2,7 +2,9 @@
 layout: single
 title: "Research"
 permalink: /research/
-classes: wide
+classes:
+  - wide
+  - research-page
 author_profile: false
 ---
 
@@ -15,7 +17,6 @@ author_profile: false
   <ul>
     <li><strong>AI safety and robustness</strong> &mdash; adversarial training and evaluation of large language models, including robustness that holds up across languages rather than only in English.</li>
     <li><strong>Machine learning for computational biology</strong> &mdash; learning structure from high-dimensional biological data such as single-cell RNA sequencing, and using it to characterize molecular phenotypes.</li>
-    <li><strong>Applied and computational mathematics</strong> &mdash; modeling and simulation of physical systems, including multiscale dynamics in materials science.</li>
     <li><strong>Ethics and social responsibility in computing</strong> &mdash; the environmental and justice implications of the computing systems we build and deploy.</li>
   </ul>
 </div>
@@ -32,7 +33,7 @@ author_profile: false
     <p class="publication-venue"><em>Proceedings of the 9th Widening NLP Workshop (WiNLP), 2025</em></p>
     <p class="publication-abstract">MULBERE extends targeted latent adversarial training to multilingual settings to improve large language model robustness against jailbreak attacks across high-, medium-, and low-resource languages.</p>
     <p class="publication-links">
-      <a href="https://aclanthology.org/2025.winlp-main.27/">Paper</a> &middot;
+      <a href="https://aclanthology.org/2025.winlp-main.27/">Paper</a>
       <a href="https://aclanthology.org/2025.winlp-main.27.pdf">PDF</a>
     </p>
   </div>
@@ -63,8 +64,8 @@ author_profile: false
     <p class="publication-venue"><em>SIAM Undergraduate Research Online, Volume 16, 2023</em></p>
     <p class="publication-abstract">An evaluation of unsupervised machine-learning approaches for identifying molecular phenotypes and tumor heterogeneity from single-cell RNA-sequencing data.</p>
     <p class="publication-links">
-      <a href="https://www.siam.org/publications/siam-journals/siam-undergraduate-research-online-siuro/issues/siuro-volume-16/">Paper</a> &middot;
-      <a href="https://www.siam.org/media/qnlkcgfk/s143998rrr.pdf">PDF</a> &middot;
+      <a href="https://www.siam.org/publications/siam-journals/siam-undergraduate-research-online-siuro/issues/siuro-volume-16/">Paper</a>
+      <a href="https://www.siam.org/media/qnlkcgfk/s143998rrr.pdf">PDF</a>
       <a href="https://arxiv.org/abs/2108.05039">arXiv</a>
     </p>
   </div>
@@ -80,7 +81,7 @@ author_profile: false
     <p class="publication-venue"><em>Research in Mathematics of Materials Science, Springer, 2022</em></p>
     <p class="publication-abstract">A mathematical and computational study of grain-boundary dynamics, including the effects of lattice misorientation, triple-junction drag, and multiple time scales.</p>
     <p class="publication-links">
-      <a href="https://doi.org/10.1007/978-3-031-04496-0_2">Springer</a> &middot;
+      <a href="https://doi.org/10.1007/978-3-031-04496-0_2">Springer</a>
       <a href="https://arxiv.org/abs/2105.07255">arXiv</a>
     </p>
   </div>
