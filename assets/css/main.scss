@@ -144,21 +144,68 @@ blockquote {
   display: none !important;
 }
 
+/* ---------------------------------------------------------------
+   Research page layout
+   Full-bleed to the left edge so the thumbnails sit at the very
+   left of the window, with the text column to their right.
+   --------------------------------------------------------------- */
+
+.layout--single.wide #main,
+.wide #main {
+  max-width: none !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+.wide .page {
+  width: 100% !important;
+  float: none !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.wide .page__inner-wrap,
+.wide .page__content {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* Page + year headings */
+.publications-heading {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.publication-year {
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.35rem;
+  font-size: 1.35em;
+  border-bottom: 2px solid $purple-light;
+}
+
 /* Research publication cards */
 .publication {
   display: flex;
-  gap: 1.25rem;
-  padding: 1.25rem 0 2rem 0;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid $silver-light;
   align-items: flex-start;
+  gap: 1.5rem;
+  width: 100%;
+  margin: 0;
+  padding: 1.25rem 0 1.5rem 0;
+  border-bottom: 1px solid $silver-light;
 }
 
-/* Smaller thumbnail */
+/* Thumbnail pinned to the left edge */
 .publication-thumb {
-  width: 150px;
-  flex: 0 0 150px;
+  flex: 0 0 180px;
+  width: 180px;
   height: auto;
+  margin: 0;
   object-fit: contain;
   background: #ffffff;
   border: 1px solid $silver-light;
@@ -166,37 +213,44 @@ blockquote {
   padding: 4px;
 }
 
-/* Give text most of the width */
+/* Text column to the right of the image, smaller than body text */
 .publication-info {
-  flex: 1;
+  flex: 1 1 auto;
   min-width: 0;
-  max-width: none;
-}
-
-/* Paper title */
-.publication-info h3 {
-  margin-top: 0;
-  margin-bottom: 0.45rem;
-  color: $purple !important;
-  font-size: 1.05em;
-  line-height: 1.35;
-}
-
-/* Tighter publication text */
-.publication-info p {
-  margin-top: 0.35rem;
-  margin-bottom: 0.55rem;
+  max-width: 60em;
+  font-size: 0.82em;
   line-height: 1.5;
 }
 
-/* Year headings */
-.page__content h2 {
-  margin-top: 2.75rem;
-  padding-bottom: 0.4rem;
-  border-bottom: 2px solid $purple-light;
+.publication-title {
+  margin: 0 0 0.4rem 0;
+  color: $purple !important;
+  font-size: 1.15em;
+  line-height: 1.3;
+}
+
+.publication-info p {
+  margin: 0 0 0.4rem 0;
+  line-height: 1.5;
+}
+
+.publication-authors {
+  color: $text;
+}
+
+.publication-venue {
+  color: $muted-text;
+}
+
+.publication-abstract {
+  color: $text;
 }
 
 /* Publication links */
+.publication-links {
+  margin-bottom: 0 !important;
+}
+
 .publication-info a {
   font-weight: 600;
   text-decoration: none;
@@ -215,42 +269,12 @@ blockquote {
 
   .publication-thumb {
     width: 140px;
+    flex: none;
     max-width: 100%;
     margin-bottom: 1rem;
   }
-}
 
-/* Make wide pages use nearly the full browser width */
-.layout--single.wide #main,
-.wide #main {
-  max-width: 95% !important;
-  width: 95% !important;
-}
-
-/* Let the research page itself fill that space */
-.wide .page {
-  width: 100% !important;
-  float: none !important;
-  padding-right: 0 !important;
-}
-
-.wide .page__inner-wrap {
-  width: 100% !important;
-  max-width: none !important;
-}
-
-/* Let publication cards span full width */
-.wide .publication {
-  width: 100%;
-}
-
-/* Smaller image, large text area */
-.wide .publication-thumb {
-  width: 160px;
-  flex: 0 0 160px;
-}
-
-.wide .publication-info {
-  flex: 1;
-  max-width: none;
+  .publication-info {
+    font-size: 0.9em;
+  }
 }
