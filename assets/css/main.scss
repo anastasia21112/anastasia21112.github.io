@@ -147,37 +147,46 @@ blockquote {
 /* Research publication cards */
 .publication {
   display: flex;
-  gap: 1.75rem;
+  gap: 1.25rem;
   padding: 1.25rem 0 2rem 0;
   margin-bottom: 1rem;
   border-bottom: 1px solid $silver-light;
   align-items: flex-start;
 }
 
+/* Smaller thumbnail */
 .publication-thumb {
-  width: 210px;
-  height: 140px;
+  width: 150px;
+  flex: 0 0 150px;
+  height: auto;
   object-fit: contain;
   background: #ffffff;
   border: 1px solid $silver-light;
   border-radius: 6px;
-  padding: 6px;
+  padding: 4px;
 }
 
+/* Give text most of the width */
 .publication-info {
   flex: 1;
+  min-width: 0;
+  max-width: none;
 }
 
+/* Paper title */
 .publication-info h3 {
   margin-top: 0;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.45rem;
   color: $purple !important;
   font-size: 1.05em;
+  line-height: 1.35;
 }
 
+/* Tighter publication text */
 .publication-info p {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.35rem;
+  margin-bottom: 0.55rem;
+  line-height: 1.5;
 }
 
 /* Year headings */
@@ -194,7 +203,8 @@ blockquote {
 }
 
 .publication-info a:hover {
-  text-decoration: underline;
+  color: $purple-light;
+  text-decoration: none;
 }
 
 /* Mobile */
@@ -204,9 +214,8 @@ blockquote {
   }
 
   .publication-thumb {
-    width: 100%;
-    height: auto;
-    max-width: 350px;
+    width: 140px;
+    max-width: 100%;
     margin-bottom: 1rem;
   }
 }
