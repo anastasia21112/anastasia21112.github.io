@@ -6,91 +6,16 @@
 @import "minimal-mistakes/skins/plum";
 @import "minimal-mistakes";
 
-/* Custom purple + silver palette */
+/* Custom palette */
+$purple: #6f5a99;
+$purple-light: #8f79b8;
+$silver: #c7c7c7;
+$silver-light: #eeeeee;
+$text: #222222;
+$muted-text: #666666;
+$background: #ffffff;
 
-$custom-purple: #8f79b8;
-$custom-purple-dark: #6f5a99;
-$custom-purple-light: #b8a6d9;
-$custom-silver: #c0c0c0;
-$custom-light-silver: #e6e6e6;
-$background-purple: #eee8f7;
-$text-purple: #5f5470;
-
-/* Page background + body text */
-body {
-  background-color: $background-purple;
-  color: $text-purple;
-}
-
-/* Make main content inherit page background */
-.page,
-.page__inner-wrap,
-.archive,
-.initial-content {
-  background-color: transparent !important;
-}
-
-/* Header / masthead */
-.masthead,
-.greedy-nav {
-  background-color: $custom-purple !important;
-}
-
-/* Navigation */
-.greedy-nav a {
-  color: #ffffff !important;
-}
-
-.greedy-nav a:hover {
-  color: $custom-light-silver !important;
-}
-
-/* Normal text */
-.page__content,
-.archive,
-.sidebar {
-  color: $text-purple;
-}
-
-/* Headings */
-.page__title,
-.archive__item-title,
-h1,
-h2,
-h3 {
-  color: $custom-purple-dark;
-}
-
-/* Links */
-a {
-  color: $custom-purple-dark;
-}
-
-a:hover {
-  color: $custom-purple;
-}
-
-/* Sidebar */
-.sidebar {
-  border-right: 1px solid $custom-silver;
-}
-
-/* Buttons */
-.btn {
-  background-color: $custom-purple !important;
-  color: #ffffff !important;
-}
-
-.btn:hover {
-  background-color: $custom-purple-dark !important;
-}
-
-/* Footer */
-.page__footer {
-  background-color: $custom-light-silver !important;
-  color: #555555;
-}
-
+/* Overall page */
 html,
 body,
 .initial-content,
@@ -100,11 +25,93 @@ body,
 .layout--single,
 .layout--home,
 #main {
-  background: #CDB7E9 !important;
+  background: $background !important;
+  color: $text;
 }
 
-/* Page titles */
+/* Main text */
+.page__content,
+.archive,
+.sidebar {
+  color: $text;
+}
+
+/* Header / masthead */
+.masthead,
+.greedy-nav {
+  background-color: #ffffff !important;
+  border-bottom: 2px solid $purple;
+}
+
+/* Navigation */
+.greedy-nav a {
+  color: $text !important;
+  font-weight: 500;
+}
+
+.greedy-nav a:hover {
+  color: $purple !important;
+}
+
+/* Headings */
 .page__title,
-.page__title a {
-  color: #6f5a99 !important; /* dark purple */
+.page__title a,
+.archive__item-title,
+h1,
+h2,
+h3,
+h4 {
+  color: $purple !important;
+}
+
+/* Links */
+a {
+  color: $purple;
+}
+
+a:hover {
+  color: $purple-light;
+}
+
+/* Sidebar */
+.sidebar {
+  border-right: 1px solid $silver-light;
+}
+
+/* Horizontal rules */
+hr {
+  border: 0;
+  border-top: 1px solid $silver;
+}
+
+/* Buttons */
+.btn {
+  background-color: $purple !important;
+  color: #ffffff !important;
+  border: none;
+}
+
+.btn:hover {
+  background-color: $purple-light !important;
+}
+
+/* Footer */
+.page__footer {
+  background-color: $silver-light !important;
+  color: $muted-text;
+  border-top: 1px solid $silver;
+}
+
+/* Optional subtle highlight for selected/current nav item */
+.greedy-nav .visible-links a:hover,
+.greedy-nav .visible-links .active {
+  border-bottom: 2px solid $purple;
+}
+
+/* Optional subtle styling for blockquotes */
+blockquote {
+  border-left: 4px solid $purple-light;
+  color: $muted-text;
+  background: #fafafa;
+  padding: 0.75em 1em;
 }
