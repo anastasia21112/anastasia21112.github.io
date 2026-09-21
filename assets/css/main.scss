@@ -40,7 +40,6 @@ body,
 .masthead,
 .greedy-nav {
   background-color: #ffffff !important;
-  border-bottom: 2px solid $purple;
 }
 
 /* Navigation */
@@ -102,16 +101,40 @@ hr {
   border-top: 1px solid $silver;
 }
 
-/* Optional subtle highlight for selected/current nav item */
-.greedy-nav .visible-links a:hover,
-.greedy-nav .visible-links .active {
-  border-bottom: 2px solid $purple;
-}
-
 /* Optional subtle styling for blockquotes */
 blockquote {
   border-left: 4px solid $purple-light;
   color: $muted-text;
   background: #fafafa;
   padding: 0.75em 1em;
+}
+
+/* Remove header divider lines */
+.masthead,
+.greedy-nav {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* Remove pink/colored underline on navigation hover */
+.greedy-nav a,
+.greedy-nav a:hover,
+.greedy-nav a:focus,
+.greedy-nav a:active {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+/* Minimal Mistakes sometimes creates hover lines with pseudo-elements */
+.greedy-nav a::before,
+.greedy-nav a::after,
+.greedy-nav a:hover::before,
+.greedy-nav a:hover::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Keep hover effect simple: just change text to purple */
+.greedy-nav a:hover {
+  color: $purple !important;
 }
