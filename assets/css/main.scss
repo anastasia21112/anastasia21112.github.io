@@ -49,9 +49,12 @@ body,
   box-shadow: none !important;
 }
 
-/* Hide name/site title in top navigation */
-.site-title {
-  display: none !important;
+/* Name in header */
+.greedy-nav .site-title {
+  display: block !important;
+  color: $purple !important;
+  font-weight: 600;
+  text-decoration: none !important;
 }
 
 /* Navigation */
@@ -134,4 +137,9 @@ blockquote {
   color: $muted-text;
   background: #fafafa;
   padding: 0.75em 1em;
+}
+
+/* Hide duplicate name below profile photo */
+.author__name {
+  display: none !important;
 }
