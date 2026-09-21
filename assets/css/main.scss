@@ -243,7 +243,24 @@ blockquote {
   line-height: 1.65;
 }
 
-/* Shared pill links (publication links, contact links) */
+/* Short bio prose */
+.short-bio {
+  max-width: 56em;
+  font-size: 0.88em;
+}
+
+.short-bio p {
+  margin-bottom: 0.9rem;
+  color: $text;
+  line-height: 1.7;
+}
+
+.short-bio p:last-child {
+  margin-bottom: 0;
+}
+
+/* Shared pill links (publication links; .pill-links is available
+   for any future list of icon links) */
 .publication-info a,
 .pill-links a {
   display: inline-block;
