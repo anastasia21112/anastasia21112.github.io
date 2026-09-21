@@ -36,20 +36,47 @@ body,
   color: $text;
 }
 
-/* Header / masthead */
-.masthead,
+/* Header */
+.masthead {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid $silver !important;
+  box-shadow: none !important;
+}
+
 .greedy-nav {
   background-color: #ffffff !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* Hide name/site title in top navigation */
+.site-title {
+  display: none !important;
 }
 
 /* Navigation */
 .greedy-nav a {
   color: $text !important;
   font-weight: 500;
+  text-decoration: none !important;
+  border-bottom: none !important;
 }
 
-.greedy-nav a:hover {
+.greedy-nav a:hover,
+.greedy-nav a:focus,
+.greedy-nav a:active {
   color: $purple !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+/* Remove theme-generated hover underline */
+.greedy-nav a::before,
+.greedy-nav a::after,
+.greedy-nav a:hover::before,
+.greedy-nav a:hover::after {
+  display: none !important;
+  content: none !important;
 }
 
 /* Headings */
@@ -101,40 +128,10 @@ hr {
   border-top: 1px solid $silver;
 }
 
-/* Optional subtle styling for blockquotes */
+/* Blockquotes */
 blockquote {
   border-left: 4px solid $purple-light;
   color: $muted-text;
   background: #fafafa;
   padding: 0.75em 1em;
-}
-
-/* Remove header divider lines */
-.masthead,
-.greedy-nav {
-  border-bottom: none !important;
-  box-shadow: none !important;
-}
-
-/* Remove pink/colored underline on navigation hover */
-.greedy-nav a,
-.greedy-nav a:hover,
-.greedy-nav a:focus,
-.greedy-nav a:active {
-  text-decoration: none !important;
-  border-bottom: none !important;
-}
-
-/* Minimal Mistakes sometimes creates hover lines with pseudo-elements */
-.greedy-nav a::before,
-.greedy-nav a::after,
-.greedy-nav a:hover::before,
-.greedy-nav a:hover::after {
-  display: none !important;
-  content: none !important;
-}
-
-/* Keep hover effect simple: just change text to purple */
-.greedy-nav a:hover {
-  color: $purple !important;
 }
